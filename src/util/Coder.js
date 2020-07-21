@@ -38,7 +38,7 @@ export function decodeText(codedText, encode2Bytes){
     let second4bit;
     let first4bit;
     let i;
-    codedText = codedText.value.trim()
+    codedText = codedText.trim()
     let decoded = "";
     codedText = codedText.split(" ");
     if(encode2Bytes === true){
