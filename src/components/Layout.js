@@ -5,8 +5,8 @@ class Layout extends Component{
     render() {
         return (
             <React.Fragment>
-                <Header />
-                <main className="mt-3 mb-3 mr-5 ml-5">
+                <Header className="mr-1 ml-1"/>
+                <main className="mt-3 mb-3 pr-1 pl-1">
                     {this.props.children}
                 </main>
             </React.Fragment>
