@@ -14,6 +14,7 @@ class Main extends Component {
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleModeChange = this.handleModeChange.bind(this);
         this.handleByteChange = this.handleByteChange.bind(this);
+        this.handleClear = this.handleClear.bind(this);
     }
 
     handleInputChange(event) {
@@ -41,6 +42,13 @@ class Main extends Component {
         }
     }
 
+    handleClear() {
+        this.setState({
+            original: "",
+            modified: ""
+        })
+    }
+
     render() {
         return (
             <div>
@@ -57,7 +65,9 @@ class Main extends Component {
                             <button type="button" className="btn btn-primary w-50">{this.state.mode}</button>
                         </div>
                         <div className="col-md-3 col-sm-6 pl-2 pr-2 text-center">
-                            <button type="button" className="btn btn-primary w-50">Clear</button>
+                            <button type="button" className="btn btn-primary w-50"
+                            onClick={this.handleClear}
+                            >Clear</button>
                         </div>
                         <div className="col-md-3 col-sm-6 pl-2 pr-2 text-center">
                             <BootstrapSwitchButton
