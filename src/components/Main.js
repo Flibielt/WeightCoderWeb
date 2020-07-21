@@ -16,13 +16,13 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <input
-                    type="text"
-                    value={this.state.original}
-                    onChange={(e)=>{
-                        this.setState({original: e.target.value});
-                    }}
-                />
+                <div className="form-group mr-4 ml-4 mb-4">
+                    <label className="text-xl-left" htmlFor="original">Original</label>
+                    <textarea className="form-control text-justify" rows={5}  id="original" value={this.state.original}
+                              onChange={(e) => {
+                                  this.setState({original: e.target.value})
+                              }}/>
+                </div>
                 <div className="container-fluid ml-0 mr-0">
                     <div className="row">
                         <div className="col-md-3 col-sm-6 pl-2 pr-2 text-center">
@@ -61,7 +61,7 @@ class Main extends Component {
                     </div>
                 </div>
 
-                <div>
+                <div className="mr-4 ml-4 mt-4 text-justify">
                     {this.state.modified}
                 </div>
             </div>
