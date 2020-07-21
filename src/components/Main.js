@@ -5,11 +5,39 @@ class Main extends Component {
     constructor(props, context) {
         super(props, context);
         this.state={
-            decode: false,
+            code: true,
             mode: "Code",
             byteMode: 2,
             original: "",
             modified: ""
+        }
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleModeChange = this.handleModeChange.bind(this);
+        this.handleByteChange = this.handleByteChange.bind(this);
+    }
+
+    handleInputChange(event) {
+        const target = event.target;
+        const value = target.value;
+        const name = target.name;
+
+        this.setState({[name]: value});
+    }
+
+    handleModeChange(isCode) {
+        this.setState({code: isCode});
+        if (isCode) {
+            this.setState({mode: "Code"});
+        } else {
+            this.setState({mode: "Decode"});
+        }
+    }
+
+    handleByteChange(is2Byte) {
+        if (is2Byte) {
+            this.setState({byteMode: 2});
+        } else {
+            this.setState({byteMode: 1});
         }
     }
 
@@ -18,10 +46,10 @@ class Main extends Component {
             <div>
                 <div className="form-group mr-4 ml-4 mb-4">
                     <label className="text-xl-left" htmlFor="original">Original</label>
-                    <textarea className="form-control text-justify" rows={5}  id="original" value={this.state.original}
-                              onChange={(e) => {
-                                  this.setState({original: e.target.value})
-                              }}/>
+                    <textarea className="form-control text-justify" rows={5}  id="original"
+                              value={this.state.original}
+                              name="original"
+                              onChange={this.handleInputChange}/>
                 </div>
                 <div className="container-fluid ml-0 mr-0">
                     <div className="row">
@@ -33,29 +61,17 @@ class Main extends Component {
                         </div>
                         <div className="col-md-3 col-sm-6 pl-2 pr-2 text-center">
                             <BootstrapSwitchButton
-                                checked={this.state.decode}
+                                checked={this.state.code}
                                 onstyle="primary w-50" offstyle="primary w-50" onlabel="Code" offlabel="Decode"
-                                onChange={(checked => {
-                                    this.setState({decode: checked});
-                                    if (checked) {
-                                        this.setState({mode: "Decode"})
-                                    } else {
-                                        this.setState({mode: "Code"})
-                                    }
-                                })}
+                                name="checked"
+                                onChange={(checked => {this.handleModeChange(checked)})}
                             />
                         </div>
                         <div className="col-md-3 col-sm-6 pl-2 pr-2 text-center">
                             <BootstrapSwitchButton
                                 checked={this.state.byteMode === 2}
                                 onstyle="primary w-50" offstyle="primary w-50" onlabel="2 byte" offlabel="1 byte"
-                                onChange={checked => {
-                                    if (checked) {
-                                        this.setState({byteMode: 2});
-                                    } else {
-                                        this.setState({byteMode: 1});
-                                    }
-                                }}
+                                onChange={checked => {this.handleByteChange(checked)}}
                             />
                         </div>
                     </div>
