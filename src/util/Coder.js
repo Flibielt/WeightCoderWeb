@@ -2,7 +2,7 @@ const weights = ["==", ":==:", "::==::", "[==]", ":[==]:", "|==|", ":|==|:",
     "::|==|::", "[|==|]",":[|==|]:", "||==||", ":||==||:", "::||==||::",
     "[||==||]", ":[||==||]:", "|||==|||"];
 
-function codeText(original, encode2Bytes) {
+export function codeText(original, encode2Bytes) {
     let b;
     let a;
     let i;
@@ -34,7 +34,7 @@ function decodeWeightText(weight) {
     }
 }
 
-function decodeText(codedText, encode2Bytes){
+export function decodeText(codedText, encode2Bytes){
     let second4bit;
     let first4bit;
     let i;
