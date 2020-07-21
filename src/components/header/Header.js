@@ -8,7 +8,7 @@ const header = () => (
             <div className="col-1">
                 <img src={logo} alt="Logo" className="img-responsive w-75" />
             </div>
-            <h2 className="col-11 text-left align-content-md-center">Weight coder</h2>
+        <div className="col-11 text-left align-content-md-center text-xl-left">Weight coder</div>
     </Navbar>
 )
 
