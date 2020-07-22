@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/WeightCoderWeb/static/css/main.5eaacea6.chunk.css",
-    "main.js": "/WeightCoderWeb/static/js/main.4eb433c5.chunk.js",
-    "main.js.map": "/WeightCoderWeb/static/js/main.4eb433c5.chunk.js.map",
+    "main.js": "/WeightCoderWeb/static/js/main.b1527b59.chunk.js",
+    "main.js.map": "/WeightCoderWeb/static/js/main.b1527b59.chunk.js.map",
     "runtime-main.js": "/WeightCoderWeb/static/js/runtime-main.10d6ff23.js",
     "runtime-main.js.map": "/WeightCoderWeb/static/js/runtime-main.10d6ff23.js.map",
     "static/js/2.3b51fda3.chunk.js": "/WeightCoderWeb/static/js/2.3b51fda3.chunk.js",
     "static/js/2.3b51fda3.chunk.js.map": "/WeightCoderWeb/static/js/2.3b51fda3.chunk.js.map",
     "index.html": "/WeightCoderWeb/index.html",
-    "precache-manifest.3438cab2ea17b81a646762c18dfb80c2.js": "/WeightCoderWeb/precache-manifest.3438cab2ea17b81a646762c18dfb80c2.js",
+    "precache-manifest.071b038b018a06550551caa4ea46af6b.js": "/WeightCoderWeb/precache-manifest.071b038b018a06550551caa4ea46af6b.js",
     "service-worker.js": "/WeightCoderWeb/service-worker.js",
     "static/css/main.5eaacea6.chunk.css.map": "/WeightCoderWeb/static/css/main.5eaacea6.chunk.css.map",
     "static/js/2.3b51fda3.chunk.js.LICENSE.txt": "/WeightCoderWeb/static/js/2.3b51fda3.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.10d6ff23.js",
     "static/js/2.3b51fda3.chunk.js",
     "static/css/main.5eaacea6.chunk.css",
-    "static/js/main.4eb433c5.chunk.js"
+    "static/js/main.b1527b59.chunk.js"
   ]
 }

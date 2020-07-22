@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05d85c4307308a7bbd4aeb6b2bd328de",
+    "revision": "9d6c3ebcabe2b0e87f01090df3cb4ba4",
     "url": "/WeightCoderWeb/index.html"
   },
   {
-    "revision": "70d915d9874e486d759b",
+    "revision": "5f9dc0d94ef7a1040a5e",
     "url": "/WeightCoderWeb/static/css/main.5eaacea6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WeightCoderWeb/static/js/2.3b51fda3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "70d915d9874e486d759b",
-    "url": "/WeightCoderWeb/static/js/main.4eb433c5.chunk.js"
+    "revision": "5f9dc0d94ef7a1040a5e",
+    "url": "/WeightCoderWeb/static/js/main.b1527b59.chunk.js"
   },
   {
     "revision": "cd4597de60c939ba599c",
